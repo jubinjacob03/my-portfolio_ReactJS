@@ -21,6 +21,7 @@ const Resume = () => {
                 />
               );
             }
+            return null; // Return a value for other cases
           })}
         </div>
 
@@ -37,6 +38,7 @@ const Resume = () => {
                 />
               );
             }
+            return null; // Return a value for other cases
           })}
         </div>
       </div>

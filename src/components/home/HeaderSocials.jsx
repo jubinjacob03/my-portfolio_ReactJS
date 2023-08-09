@@ -7,6 +7,7 @@ const HeaderSocials = () => {
         href="https://github.com/jubinjacob03"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="fa-brands fa-github"></i>
       </a>
@@ -15,6 +16,7 @@ const HeaderSocials = () => {
         href="https://wa.me/+918078366284"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="fa-brands fa-whatsapp"></i>
       </a>
@@ -23,6 +25,7 @@ const HeaderSocials = () => {
         href="http://t.me/jubinjacob03"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="fa-brands fa-telegram"></i>
       </a>
@@ -31,6 +34,7 @@ const HeaderSocials = () => {
         href="https://instagram.com/jv.bin?igshid=NTc4MTIwNjQ2YQ=="
         className="home__social-link"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="fa-brands fa-instagram"></i>
       </a>
@@ -39,6 +43,7 @@ const HeaderSocials = () => {
         href="https://linkedin.com/in/jubin-jacob-5474a3217"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer"
       >
         <i class="fa-brands fa-linkedin"></i>
       </a>

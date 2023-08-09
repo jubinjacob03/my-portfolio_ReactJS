@@ -29,7 +29,6 @@ const Menu = [
     category: "Front-End",
     link: "https://github.com/jubinjacob03/Pisense-Frontend_ReactJS_ApexCharts",
   },
-  ,
   {
     id: 4,
     image: Work4,
@@ -37,7 +36,6 @@ const Menu = [
     category: "CYB / ML / DL/ AI / NLP / IOT",
     link: "https://github.com/jubinjacob03/HeartDiseaseClassify-ML/tree/heartD-1",
   },
-  ,
   {
     id: 5,
     image: Work5,
@@ -45,7 +43,6 @@ const Menu = [
     category: "Mobile App Development",
     link: "https://github.com/jubinjacob03/ChatWIZ-Android_Studio-Kt_FireBase",
   },
-  ,
   {
     id: 6,
     image: Work6,
