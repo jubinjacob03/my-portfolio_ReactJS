@@ -1,11 +1,18 @@
 ---
 > # About this Project
 
-> [!TIP]
-> Check out my portfolio at <br> 
-https://my-portfolio-react-js-two.vercel.app/ 
-or https://my-portfolio-jubin03.netlify.app
- ----
+> [!NOTE]
+> - This project is built using React JS for the Frontend and uses MongoDB for database. This is my Portfolio website, feel free to visit and check out my works. Contact me for any queries. <br/>
+> - Check out my portfolio at : [https://portfolio-jubinjacob.netlify.app](https://portfolio-jubinjacob.netlify.app/)
+- 
+> ### How this project helped me :
+```bash
+- Creating my own Portfolio using React JS.
+- Exploring CRUD , data manipulation & storage with MongoDB.
+- Solidified my skills on React & Cascade Style Sheet.
+```
+
+----
  
 ### Getting Started with Create React App
 
