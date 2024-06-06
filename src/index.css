@@ -102,7 +102,7 @@ img {
   padding-bottom: 2rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   margin-left: 0.875rem;
   font-weight: var(--font-bold);
@@ -110,7 +110,7 @@ img {
   margin-bottom: 3.75rem;
 }
 
-.section__title::before {
+.section-title::before {
   content: '';
   background: url(./assets/dots-bg.svg);
   height: 2.25rem;
@@ -143,5 +143,8 @@ img {
 }
 
 .btn:hover {
-  animation: button-push 0.3s linear 1;
+  animation: button-push 0.7s linear 1;
+  border: 1px solid var(--first-color);
+  background-color: #fff;
+  color: var(--first-color);
 }

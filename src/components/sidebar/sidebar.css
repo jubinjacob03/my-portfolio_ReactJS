@@ -14,20 +14,20 @@
     transition: .3s;
 }
 
-.nav__list {
+.nav-list {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
-.nav__link {
+.nav-link {
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--font-bold);
     transition: .3s;
 }
 
-.nav__link:hover {
+.nav-link:hover {
     color: hsl(205, 100%, 68%);
 }
 
@@ -38,7 +38,7 @@
     writing-mode: vertical-rl;
 }
 
-.nav__toggle {
+.nav-toggle {
     position: fixed;
     top: 1.25rem;
     left: 1.875rem;
@@ -59,11 +59,11 @@
       left: -110px;
     }
 
-    .nav__toggle {
+    .nav-toggle {
         display: flex;
     }
 
-    .nav__toggle-open {
+    .nav-toggle-open {
         left: 140px;
     }
 

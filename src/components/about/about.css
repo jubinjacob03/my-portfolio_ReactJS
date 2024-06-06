@@ -1,8 +1,8 @@
-.about__container {
+.about-container {
     grid-template-columns: 3fr 9fr;
     column-gap: 1.875rem;
 }
-.about__data { 
+.about-data { 
     padding: 1.875rem;
     background-color: var(--container-color);
     box-shadow: var(--shadow);
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.about__data::before {
+.about-data::before {
     content: '';
     width: 0;
     height: 0;
@@ -25,22 +25,22 @@
     top: 20%;
 }
 
-.about__description {
+.about-description {
     margin-bottom: 1rem;
     text-align: justify;
 }
 
-.about__skills {
+.about-skills {
     row-gap: 1.25rem;
 }
 
-.skills__titles {
+.skills-titles {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.skills__name {
+.skills-name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
@@ -49,53 +49,53 @@
     line-height: 1.2;
 }
 
-.skills__bar,
-.skills__percentage {
+.skills-bar,
+.skills-percentage {
     height: 7px;
     border-radius: 0.25rem;
 }
 
-.skills__bar {
+.skills-bar {
     background-color: #f1f1f1;
 }
 
-.skills__percentage {
+.skills-percentage {
     display: block;
 }
 
-.cyber__iot {
+.cyber-iot {
     width: 35%;
     background-color: rgb(255, 209, 92);
 }
 
-.front__end {
+.front-end {
     width: 85%;
     background-color: rgb(255,76, 96);
 }
 
-.full__stack {
+.full-stack {
     width: 45%;
     background-color: rgb(108, 108, 299);
 }
 
-.ai__ml__dl {
+.ai-ml-dl {
     width: 60%;
     background-color: rgb(108, 209, 99);
 }
 
-.mobile__andro__os {
+.mobile-andro-os {
     width: 75%;
     background-color: rgb(242, 136, 50);
 }
 
 @media screen and (max-width: 1024px) {
-    .about__container {
+    .about-container {
       grid-template-columns: 720px;
       justify-content: center;
       row-gap: 1.875rem;
     }
 
-    .about__data::before {
+    .about-data::before {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 10px solid #fff;
@@ -103,34 +103,34 @@
         top: -20px;
     }
 
-    .about__img {
+    .about-img {
         justify-self: center;
     }
   }
 
 @media screen and (max-width: 768px) {
-    .about__container {
+    .about-container {
         grid-template-columns: 350px;
     }
 
-    .about__data::before {
+    .about-data::before {
         left: 47%;
     }
 
-    .about__data {
+    .about-data {
         grid-template-columns: 1fr;
         row-gap: 1.875rem;
     }
   }
 
 @media screen and (max-width: 576px) {
-    .about__container {
+    .about-container {
       grid-template-columns: 320px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .contact__container {
+    .contact-container {
       grid-template-columns: 1fr;
     }
 }

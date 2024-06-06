@@ -1,4 +1,4 @@
-.work__filters {
+.work-filters {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -6,34 +6,34 @@
     margin-bottom: 2.5rem;
 }
 
-.work__item {
+.work-item {
     padding-left: 3%;
     cursor: pointer;
     font-weight: var(--font-bold);
     transition: .3s;
 }
 
-.work__item:hover {
+.work-item:hover {
     color: var(--first-color);
 } 
 
-.work__img {
+.work-img {
     padding: 30% 30% 30% 30%;
 }
 
-.work__container {
+.work-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
 }
 
-.work__card {
+.work-card {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
 
-.work__mask {
+.work-mask {
     background: #6c6ce5;
     position: absolute;
     left: 0;
@@ -44,11 +44,11 @@
     opacity: 0;
 }
 
-.work__card:hover .work__mask {
+.work-card:hover .work-mask {
     opacity: 0.9;
 }
 
-.work__category {
+.work-category {
     color: #fff;
     background-color: var(--first-color);
     border-bottom-left-radius: 0.98rem;
@@ -63,7 +63,7 @@
     transition: .3s;
 }
 
-.work__title {
+.work-title {
     color: #fff;
     font-size: var(--h3-font-size);
     margin: 0 0 0.98rem;
@@ -75,7 +75,7 @@
     opacity: 0;
 }
 
-.work__button {
+.work-button {
     color: #fff;
     position: absolute;
     bottom: 1.5rem;
@@ -93,43 +93,43 @@
     opacity: 0;
 }
 
-.work__card:hover .work__button {
+.work-card:hover .work-button {
     opacity: 1;
 }
 
-.work__card:hover .work__title,
-.work__card:hover .work__category {
+.work-card:hover .work-title,
+.work-card:hover .work-category {
     opacity: 1;
     transform: translateY(0);
 }
 
 @media screen and (max-width: 1024px) {
-    .work__filters {
+    .work-filters {
         justify-content: center;
     }
-    .work__container {
+    .work-container {
       grid-template-columns: repeat(2,330px);
       justify-content: center;
       row-gap: 1.875rem;
     }
 
-    .timeline__item::before {
+    .timeline-item::before {
         left: 2px;
     }
   }
 
 @media screen and (max-width: 576px) {
-    .work__container {
+    .work-container {
       grid-template-columns: 310px;
     }
 
-    .work__filters {
+    .work-filters {
         row-gap: .25rem;
     }
   }
 
 @media screen and (max-width: 350px) {
-    .work__container {
+    .work-container {
       grid-template-columns: 1fr;
     }
 }
