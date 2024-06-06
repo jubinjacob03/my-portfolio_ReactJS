@@ -3,11 +3,12 @@ import "./sidebar.css";
 import Logo from "../../assets/logo.png";
 
 const Sidebar = () => {
+  const CurrYear = new Date().getFullYear();
   const [toggle, showMenu] = useState(false);
   return (
     <>
       <aside className={toggle ? "aside show-menu" : "aside"}>
-        <a href="#home" className="nav__logo">
+        <a href="#home" className="nav-logo">
           <img
             src={Logo}
             alt=""
@@ -20,47 +21,47 @@ const Sidebar = () => {
           />
         </a>
         <nav className="nav">
-          <div className="nav__menu">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link">
+          <div className="nav-menu">
+            <ul className="nav-list">
+              <li className="nav-item">
+                <a href="#home" className="nav-link">
                   <i className="icon-home"></i>
                 </a>
               </li>
 
-              <li className="nav__item">
-                <a href="#about" className="nav__link">
+              <li className="nav-item">
+                <a href="#about" className="nav-link">
                   <i className="icon-user-following"></i>
                 </a>
               </li>
 
-              <li className="nav__item">
-                <a href="#resume" className="nav__link">
+              <li className="nav-item">
+                <a href="#resume" className="nav-link">
                   <i className="icon-graduation"></i>
                 </a>
               </li>
 
-              <li className="nav__item">
-                <a href="#work" className="nav__link">
+              <li className="nav-item">
+                <a href="#work" className="nav-link">
                   <i className="icon-layers"></i>
                 </a>
               </li>
 
-              <li className="nav__item">
-                <a href="#contact" className="nav__link">
+              <li className="nav-item">
+                <a href="#contact" className="nav-link">
                   <i className="icon-note"></i>
                 </a>
               </li>
             </ul>
           </div>
         </nav>
-        <div className="nav__footer">
-          <span className="copyright">&copy; 2023 - 2024.</span>
+        <div className="nav-footer">
+          <span className="copyright">&copy; 2023 - {CurrYear}.</span>
         </div>
       </aside>
 
       <div
-        className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"}
+        className={toggle ? "nav-toggle nav-toggle-open" : "nav-toggle"}
         onClick={() => showMenu(!toggle)}
       >
         <i className="icon-menu"></i>

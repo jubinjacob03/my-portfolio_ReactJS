@@ -2,10 +2,10 @@ import React from "react";
 
 const HeaderSocials = () => {
   return (
-    <div className="home__socials">
+    <div className="home-socials">
       <a
         href="https://github.com/jubinjacob03"
-        className="home__social-link"
+        className="home-social-link"
         target="_blank"
         rel="noreferrer"
       >
@@ -14,7 +14,7 @@ const HeaderSocials = () => {
 
       <a
         href="https://wa.me/+918078366284"
-        className="home__social-link"
+        className="home-social-link"
         target="_blank"
         rel="noreferrer"
       >
@@ -23,7 +23,7 @@ const HeaderSocials = () => {
 
       <a
         href="http://t.me/jubinjacob03"
-        className="home__social-link"
+        className="home-social-link"
         target="_blank"
         rel="noreferrer"
       >
@@ -32,7 +32,7 @@ const HeaderSocials = () => {
 
       <a
         href="https://instagram.com/jv.bin?igshid=NTc4MTIwNjQ2YQ=="
-        className="home__social-link"
+        className="home-social-link"
         target="_blank"
         rel="noreferrer"
       >
@@ -41,7 +41,7 @@ const HeaderSocials = () => {
 
       <a
         href="https://linkedin.com/in/jubin-jacob-5474a3217"
-        className="home__social-link"
+        className="home-social-link"
         target="_blank"
         rel="noreferrer"
       >

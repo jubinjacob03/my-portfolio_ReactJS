@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <section className="home container" id="home">
       <div className="intro">
-        <img src={Me} alt="" className="home__img" />
-        <h1 className="home__name">Jubin Jacob</h1>
-        <span className="home__education">I'm a B.Tech CSE Student</span>
+        <img src={Me} alt="" className="home-img" />
+        <h1 className="home-name">Jubin Jacob</h1>
+        <span className="home-education">I'm a B.Tech CSE Student</span>
         <HeaderSocials />
         <a href="#contact" className="btn">
           Need to Talk ?

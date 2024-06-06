@@ -5,22 +5,22 @@ import Me from "../../assets/avatar_2.jpg";
 const About = () => {
   return (
     <section className="about container section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <div className="about__container grid">
+      <h2 className="section-title">About Me</h2>
+      <div className="about-container grid">
         <img
           src={Me}
           alt=""
-          className="about__img"
+          className="about-img"
           style={{ borderRadius: "10%" }}
         />
-        <div className="about__data grid">
-          <div className="about__info">
-            <p className="about__description">
+        <div className="about-data grid">
+          <div className="about-info">
+            <p className="about-description">
               I am Jubin Jacob, B . Tech CSE ( Cyber Security & IOT ) student
-              from the city of Adoor, Kerala, India. Currently pursuing my
-               Bachelor of Technology ( 2021 - 25 Batch ) from Sri Ramachandra
-              Faculty of Engineering and Technology, Porur, Chennai . Interested
-              in fields of Cyber Security ,  AI ,  ML ,  DL  &  IOT. I also work
+              from the city of Adoor, Kerala, India. Pursuing my  Bachelor of
+              Technology ( 21 - 25 Batch ) from Sri Ramachandra Faculty of
+              Engineering and Technology, Porur, Chennai . Interested in fields
+              of Cyber Security ,  AI ,  Cloud ,  ML ,  DL  &  IOT. I also work
               on Mobile App Development and Front-End /Back-End for fun. Open to
               collaborating on Interesting and Innovative projects. Feel free to
               contact.
@@ -33,54 +33,54 @@ const About = () => {
               Download Resume
             </a>
           </div>
-          <div className="about__skills grid">
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">Cyber / IOT</h3>
-                <span className="skills__number ">35%</span>
+          <div className="about-skills grid">
+            <div className="skills-data">
+              <div className="skills-titles">
+                <h3 className="skills-name">Cyber / IOT</h3>
+                <span className="skills-number ">35%</span>
               </div>
-              <div className="skills__bar">
-                <span className="skills__percentage cyber__iot"></span>
-              </div>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">Front-End</h3>
-                <span className="skills__number">85%</span>
-              </div>
-              <div className="skills__bar">
-                <span className="skills__percentage front__end"></span>
+              <div className="skills-bar">
+                <span className="skills-percentage cyber-iot"></span>
               </div>
             </div>
 
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">Full Stack</h3>
-                <span className="skills__number">45%</span>
+            <div className="skills-data">
+              <div className="skills-titles">
+                <h3 className="skills-name">Front-End</h3>
+                <span className="skills-number">85%</span>
               </div>
-              <div className="skills__bar">
-                <span className="skills__percentage full__stack"></span>
-              </div>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">AI /ML /DL</h3>
-                <span className="skills__number">60%</span>
-              </div>
-              <div className="skills__bar">
-                <span className="skills__percentage ai__ml__dl"></span>
+              <div className="skills-bar">
+                <span className="skills-percentage front-end"></span>
               </div>
             </div>
 
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">Mobile Apps / Android / OS</h3>
-                <span className="skills__number">75%</span>
+            <div className="skills-data">
+              <div className="skills-titles">
+                <h3 className="skills-name">Full Stack</h3>
+                <span className="skills-number">45%</span>
               </div>
-              <div className="skills__bar">
-                <span className="skills__percentage mobile__andro__os"></span>
+              <div className="skills-bar">
+                <span className="skills-percentage full-stack"></span>
+              </div>
+            </div>
+
+            <div className="skills-data">
+              <div className="skills-titles">
+                <h3 className="skills-name">AI /ML /DL</h3>
+                <span className="skills-number">60%</span>
+              </div>
+              <div className="skills-bar">
+                <span className="skills-percentage ai-ml-dl"></span>
+              </div>
+            </div>
+
+            <div className="skills-data">
+              <div className="skills-titles">
+                <h3 className="skills-name">Mobile Apps / Android / OS</h3>
+                <span className="skills-number">75%</span>
+              </div>
+              <div className="skills-bar">
+                <span className="skills-percentage mobile-andro-os"></span>
               </div>
             </div>
           </div>

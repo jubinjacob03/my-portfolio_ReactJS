@@ -5,7 +5,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2021 - present",
     title: "Bachelor's Degree",
-    desc: "Sri Ramachandra Faculty of Engineering and Technology, Porur, Chennai ( Deemed to be University ).⠀ CGPA : 8.1",
+    desc: "Pursuing Sri Ramachandra Faculty of Engineering and Technology, Porur, Chennai ( Deemed to be University ).",
   },
   {
     id: 2,
