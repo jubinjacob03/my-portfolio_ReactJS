@@ -11,7 +11,7 @@ const About = () => {
           src={Me}
           alt=""
           className="about-img"
-          style={{ borderRadius: "10%" }}
+          style={{ borderRadius: "10%", zIndex: "1"}}
         />
         <div className="about-data grid">
           <div className="about-info">

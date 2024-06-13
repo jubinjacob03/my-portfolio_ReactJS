@@ -75,9 +75,15 @@
     opacity: 0;
 }
 
+.work-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
 .work-button {
     color: #fff;
-    position: absolute;
+    position: relative;
     bottom: 1.5rem;
     left: 1.5rem;
     font-size: var(--h3-font-size);
@@ -93,7 +99,26 @@
     opacity: 0;
 }
 
-.work-card:hover .work-button {
+.work-view-button {
+    color: #fff;
+    position: relative;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    background-color: #ffd15c;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.work-card:hover .work-button,
+.work-card:hover .work-view-button {
     opacity: 1;
 }
 

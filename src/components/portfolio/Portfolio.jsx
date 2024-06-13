@@ -26,9 +26,9 @@ const Portfolio = () => {
         </span>
         <span
           className="work-item"
-          onClick={() => filterItem("CYB / ML / DL/ AI / NLP / IOT")}
+          onClick={() => filterItem("CYB / ML / DL / AI / IOT / Others")}
         >
-          CYB / ML / DL/ AI / NLP / IOT
+          CYB / ML / DL / AI / IOT / Others
         </span>
         <span
           className="work-item"
@@ -39,7 +39,7 @@ const Portfolio = () => {
       </div>
       <div className="work-container grid">
         {items.map((elem) => {
-          const { id, image, title, category, link } = elem;
+          const { id, image, title, category, link, preview } = elem;
           return (
             <div className="work-card" key={id}>
               <div className="work-thumbnail">
@@ -48,9 +48,14 @@ const Portfolio = () => {
               </div>
               <span className="work-category">{category}</span>
               <h3 className="work-title">{title}</h3>
-              <a href={link} className="work-button">
-                <i className="icon-link work-button-icon"></i>
-              </a>
+              <div className="work-buttons">
+                <a href={link} target="_blank" className="work-button">
+                  <i className="icon-link work-button-icon"></i>
+                </a>
+                <a href={preview} target="_blank" className="work-view-button">
+                  <i className="icon-eye work-button-icon"></i>
+                </a>
+              </div>
             </div>
           );
         })}
