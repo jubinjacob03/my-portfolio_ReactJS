@@ -12,7 +12,7 @@ const Home = () => {
         <h1 className="home-name">Jubin Jacob</h1>
         <span className="home-education">I'm a B.Tech CSE Student</span>
         <HeaderSocials />
-        <a href="#contact" className="btn">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jr.jubin03@gmail.com" target="_blank" className="btn">
           Need to Talk ?
         </a>
         <ScrollDown />

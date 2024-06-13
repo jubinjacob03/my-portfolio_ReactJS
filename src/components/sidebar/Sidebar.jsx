@@ -8,23 +8,12 @@ const Sidebar = () => {
   return (
     <>
       <aside className={toggle ? "aside show-menu" : "aside"}>
-        <a href="#home" className="nav-logo">
-          <img
-            src={Logo}
-            alt=""
-            style={{
-              height: "40px",
-              width: "40px",
-              borderRadius: "50%",
-              objectFit: "cover",
-            }}
-          />
-        </a>
+        <div />
         <nav className="nav">
           <div className="nav-menu">
             <ul className="nav-list">
               <li className="nav-item">
-                <a href="#home" className="nav-link">
+                <a href="/" className="nav-link">
                   <i className="icon-home"></i>
                 </a>
               </li>
@@ -48,7 +37,11 @@ const Sidebar = () => {
               </li>
 
               <li className="nav-item">
-                <a href="#contact" className="nav-link">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=jr.jubin03@gmail.com"
+                  target="_blank"
+                  className="nav-link"
+                >
                   <i className="icon-note"></i>
                 </a>
               </li>
@@ -56,7 +49,7 @@ const Sidebar = () => {
           </div>
         </nav>
         <div className="nav-footer">
-          <span className="copyright">&copy; 2023 - {CurrYear}.</span>
+          <span className="copyright">&copy; 2022 - {CurrYear}.</span>
         </div>
       </aside>
 
