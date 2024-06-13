@@ -9,7 +9,7 @@ const HeaderSocials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
 
       <a
@@ -18,7 +18,7 @@ const HeaderSocials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-whatsapp"></i>
+        <i className="fa-brands fa-whatsapp"></i>
       </a>
 
       <a
@@ -27,7 +27,7 @@ const HeaderSocials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-telegram"></i>
+        <i className="fa-brands fa-telegram"></i>
       </a>
 
       <a
@@ -36,7 +36,7 @@ const HeaderSocials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram"></i>
       </a>
 
       <a
@@ -45,7 +45,7 @@ const HeaderSocials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
       </a>
     </div>
   );

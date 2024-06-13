@@ -49,10 +49,10 @@ const Portfolio = () => {
               <span className="work-category">{category}</span>
               <h3 className="work-title">{title}</h3>
               <div className="work-buttons">
-                <a href={link} target="_blank" className="work-button">
+                <a href={link} target="_blank" rel="noreferrer" className="work-button">
                   <i className="icon-link work-button-icon"></i>
                 </a>
-                <a href={preview} target="_blank" className="work-view-button">
+                <a href={preview} target="_blank" rel="noreferrer" className="work-view-button">
                   <i className="icon-eye work-button-icon"></i>
                 </a>
               </div>

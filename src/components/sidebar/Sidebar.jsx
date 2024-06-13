@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./sidebar.css";
-import Logo from "../../assets/logo.png";
 
 const Sidebar = () => {
   const CurrYear = new Date().getFullYear();
@@ -13,7 +12,7 @@ const Sidebar = () => {
           <div className="nav-menu">
             <ul className="nav-list">
               <li className="nav-item">
-                <a href="/" className="nav-link">
+                <a href="#home" className="nav-link">
                   <i className="icon-home"></i>
                 </a>
               </li>
@@ -40,6 +39,7 @@ const Sidebar = () => {
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=jr.jubin03@gmail.com"
                   target="_blank"
+                  rel="noreferrer"
                   className="nav-link"
                 >
                   <i className="icon-note"></i>
