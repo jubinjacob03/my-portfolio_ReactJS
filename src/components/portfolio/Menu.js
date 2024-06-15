@@ -98,7 +98,7 @@ const Menu = [
     title: "Machine Learning - Heart Diseases",
     category: "CYB / ML / DL / AI / IOT / Others",
     link: "https://github.com/jubinjacob03/HeartDiseaseClassify-ML/tree/heartD-2",
-    preview:""
+    preview:"https://heartdiseaseclassify-ml.onrender.com"
   },
   {
     id: 12,
