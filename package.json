@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/all": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
+    "firebase": "^10.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
