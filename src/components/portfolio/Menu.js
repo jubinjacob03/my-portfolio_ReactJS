@@ -74,7 +74,7 @@ const Menu = [
     title: "Genre Classification - KNN",
     category: "CYB / ML / DL / AI / IOT / Others",
     link: "https://github.com/jubinjacob03/genre-classification-recommendation_Spotify",
-    preview:""
+    preview:"https://genre-classification-recommendation.onrender.com/"
   },
   {
     id: 9,
