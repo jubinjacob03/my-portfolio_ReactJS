@@ -57,7 +57,7 @@ const About = () => {
             <div className="skills-data">
               <div className="skills-titles">
                 <h3 className="skills-name">Full Stack</h3>
-                <span className="skills-number">45%</span>
+                <span className="skills-number">70%</span>
               </div>
               <div className="skills-bar">
                 <span className="skills-percentage full-stack"></span>
@@ -67,7 +67,7 @@ const About = () => {
             <div className="skills-data">
               <div className="skills-titles">
                 <h3 className="skills-name">AI /ML /DL</h3>
-                <span className="skills-number">60%</span>
+                <span className="skills-number">50%</span>
               </div>
               <div className="skills-bar">
                 <span className="skills-percentage ai-ml-dl"></span>
@@ -77,7 +77,7 @@ const About = () => {
             <div className="skills-data">
               <div className="skills-titles">
                 <h3 className="skills-name">Mobile Apps / Android / OS</h3>
-                <span className="skills-number">75%</span>
+                <span className="skills-number">40%</span>
               </div>
               <div className="skills-bar">
                 <span className="skills-percentage mobile-andro-os"></span>
