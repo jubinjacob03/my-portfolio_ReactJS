@@ -1,21 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./portfolio.css";
-import Menu from "./Menu";
+import { db } from "../../firebase/firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 const Portfolio = () => {
-  const [items, setItems] = useState(Menu);
-  const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
-    });
+  const [items, setItems] = useState([]);
+  const [originalItems, setOriginalItems] = useState([]);
 
-    setItems(updatedItems);
+  useEffect(() => {
+    const fetchItems = async () => {
+      const querySnapshot = await getDocs(collection(db, "projects"));
+      const projectsData = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      projectsData.sort((a, b) => a.id - b.id);
+
+      setItems(projectsData);
+      setOriginalItems(projectsData);
+    };
+
+    fetchItems();
+  }, []);
+
+  const filterItem = (categoryItem) => {
+    if (categoryItem === "Everything") {
+      setItems(originalItems);
+    } else {
+      const updatedItems = originalItems.filter((curElem) => {
+        return curElem.category === categoryItem;
+      });
+      setItems(updatedItems);
+    }
   };
+
   return (
     <section className="work container section" id="work">
       <h2 className="section-title">My Works</h2>
       <div className="work-filters">
-        <span className="work-item" onClick={() => setItems(Menu)}>
+        <span className="work-item" onClick={() => filterItem("Everything")}>
           Everything
         </span>
         <span className="work-item" onClick={() => filterItem("Front-End")}>
