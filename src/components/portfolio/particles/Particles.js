@@ -17,7 +17,7 @@ const ParticleComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "hsl(258, 60%, 98%)",
+          value: "#262626",
         },
       },
       fpsLimit: 240,
@@ -44,10 +44,10 @@ const ParticleComponent = (props) => {
       },
       particles: {
         color: {
-          value: "hsl(244, 24%, 26%)",
+          value: "#f59e0b",
         },
         links: {
-          color: "hsl(244, 24%, 26%)",
+          color: "#fcd34d",
           distance: 180,
           enable: true,
           opacity: 0.3,

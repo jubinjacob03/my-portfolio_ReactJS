@@ -39,7 +39,7 @@
 }
 
 .home-social-link:hover{
-    color: hsl(205, 100%, 68%);
+    color: #ea580c;
 }
 
 .scroll-down {
@@ -54,7 +54,7 @@
 }
 
 .mouse {
-    border: 2px solid #454360;
+    border: 2px solid #f59e0b;
     display: block;
     height: 1.6rem;
     width: 1.25rem;

@@ -28,11 +28,11 @@
 }
 
 .nav-link:hover {
-    color: hsl(205, 100%, 68%);
+    color: #ea580c;
 }
 
 .copyright {
-    color: hsl(245, 15%, 65%);
+    color: #fcd34d;
     font-size: var(--small-font-size);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
