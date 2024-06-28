@@ -55,9 +55,9 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="md:min-h-[200vh] flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.5] sm:scale-50"
     >
-      <div className="my-40" />
+      <div className="my-32" />
       {/* Lid */}
       <Lid
         src={src}
@@ -136,7 +136,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
             <div class="bg-gray-700 border-t-0 w-full">
               <div className="about-data grid">
                 <div className="about-info">
-                  <p className="about-description text-sm leading-loose">
+                  <p className="text-sm leading-loose py-4 px-5">
                     Hi, I'm Jubin Jacob, a B.Tech CSE CyberSecurity student at
                     Sri Ramachandra Faculty of Engineering, Chennai. Exploring
                     fields of Cyber Security, AI, ML, IoT, and Full-Stack .
@@ -150,7 +150,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
                     class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group mx-4"
                   >
                     <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-amber-500 opacity-[3%]"></span>
-                    <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-amber-500 opacity-100 group-hover:-translate-x-8"></span>
+                    <span class="absolute top-0 left-0 w-[12.25rem] h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-amber-500 opacity-100 group-hover:-translate-x-8"></span>
                     <span class="relative w-full text-left text-amber-500 transition-colors duration-200 ease-in-out group-hover:text-gray-900 text-sm">
                       Download Resume
                     </span>

@@ -6,7 +6,9 @@ const About = () => {
   return (
     <section className="about container section" id="about">
       <h2 className="section-title">About Me</h2>
-      <MacbookScroll/>
+      <div className="mb-[30rem]">
+        <MacbookScroll />
+      </div>
     </section>
   );
 };
