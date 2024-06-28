@@ -28,7 +28,7 @@
 }
 
 .nav-link:hover {
-    color: #ea580c;
+    color: var(--first-color);
 }
 
 .copyright {

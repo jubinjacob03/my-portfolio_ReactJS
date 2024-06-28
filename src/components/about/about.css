@@ -12,10 +12,6 @@
     position: relative;
 }
 
-.about-description {
-    padding: 1rem;
-}
-
 .about-skills {
     row-gap: 1rem;
     padding: 1rem;
