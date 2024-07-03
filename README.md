@@ -2,13 +2,13 @@
 > # About this Project
 
 > [!NOTE]
-> - This project is built using React JS for the Frontend and uses MongoDB for database. This is my Portfolio website, feel free to visit and check out my works. Contact me for any queries. <br/>
+> - This project is built using React JS for the Frontend and uses Firebase for database. This is my Portfolio website, feel free to visit and check out my works. Contact me for any queries. <br/>
 > - Check out my portfolio at : [https://portfolio-jubinjacob.netlify.app](https://portfolio-jubinjacob.netlify.app/)
 - 
 > ### How this project helped me :
 ```bash
 - Creating my own Portfolio using React JS.
-- Exploring CRUD , data manipulation & storage with MongoDB.
+- Exploring CRUD , data manipulation & storage with Firebase.
 - Solidified my skills on React & Cascade Style Sheet.
 ```
 
