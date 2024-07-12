@@ -1,5 +1,11 @@
 import React, { useRef } from "react";
-import { motion, useAnimationFrame, useMotionTemplate, useMotionValue, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimationFrame,
+  useMotionTemplate,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import { cn } from "../../utils/cn";
 
 export function CardWrapper({
@@ -48,7 +54,13 @@ export function CardWrapper({
   );
 }
 
-export const MovingBorder = ({ children, duration = 6000, rx, ry, ...otherProps }) => {
+export const MovingBorder = ({
+  children,
+  duration = 6000,
+  rx,
+  ry,
+  ...otherProps
+}) => {
   const pathRef = useRef();
   const progress = useMotionValue(0);
 
@@ -60,8 +72,14 @@ export const MovingBorder = ({ children, duration = 6000, rx, ry, ...otherProps 
     }
   });
 
-  const x = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).x);
-  const y = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).y);
+  const x = useTransform(
+    progress,
+    (val) => pathRef.current?.getPointAtLength(val).x
+  );
+  const y = useTransform(
+    progress,
+    (val) => pathRef.current?.getPointAtLength(val).y
+  );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
 
