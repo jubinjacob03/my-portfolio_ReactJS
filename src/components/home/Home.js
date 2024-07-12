@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.css";
-import Me from "../../assets/avatar_1.jpg";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 
@@ -12,7 +11,7 @@ const Home = () => {
     >
       <div className="max-w-[540px] text-center p-[5rem] rounded-lg flex flex-col items-center justify-center content-center">
         <img
-          src={Me}
+          src="./avatar_1.jpg"
           alt=""
           className="mb-6 h-[100px] w-[100px] rounded-full"
         />

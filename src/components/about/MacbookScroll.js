@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Me from "../../assets/avatar_1.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   IconBrightnessDown,
@@ -111,7 +110,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <img src={Me} alt="profile-img" className="size-20 rounded-full" />
+          <img src="./avatar_1.jpg" alt="profile-img" className="size-20 rounded-full" />
         </div>
       </div>
       <motion.div
