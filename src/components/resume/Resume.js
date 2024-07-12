@@ -24,7 +24,7 @@ const Resume = () => {
                   />
                 );
               }
-              return null; // Return a value for other cases
+              return null;
             })}
           </div>
         </CardWrapper>

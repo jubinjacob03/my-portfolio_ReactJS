@@ -36,12 +36,7 @@ const Sidebar = () => {
               </li>
 
               <li className="nav-item">
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=jr.jubin03@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-link"
-                >
+                <a href="#contact" className="nav-link">
                   <i className="icon-note"></i>
                 </a>
               </li>
