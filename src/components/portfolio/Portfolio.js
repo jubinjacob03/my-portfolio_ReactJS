@@ -2,38 +2,55 @@ import React, { useState, useEffect } from "react";
 import "./portfolio.css";
 import { db } from "../../firebase/firebase";
 import { collection, getDocs } from "firebase/firestore";
+import Loader from "../../utils/Loader";
 
 const Portfolio = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [items, setItems] = useState([]);
   const [originalItems, setOriginalItems] = useState([]);
 
   useEffect(() => {
     const fetchItems = async () => {
-      const querySnapshot = await getDocs(collection(db, "projects"));
-      const projectsData = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
+      try {
+        const querySnapshot = await getDocs(collection(db, "projects"));
+        const projectsData = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
 
-      projectsData.sort((a, b) => a.id - b.id);
+        projectsData.sort((a, b) => a.id - b.id);
 
-      setItems(projectsData);
-      setOriginalItems(projectsData);
+        setItems(projectsData);
+        setOriginalItems(projectsData);
+      } catch (error) {
+        console.log("Error getting documents: ", error);
+      } finally {
+        setIsLoading(false);
+      }
     };
-
     fetchItems();
   }, []);
 
   const filterItem = (categoryItem) => {
-    if (categoryItem === "Everything") {
-      setItems(originalItems);
-    } else {
-      const updatedItems = originalItems.filter((curElem) => {
-        return curElem.category === categoryItem;
-      });
-      setItems(updatedItems);
-    }
+    setIsLoading(true);
+    setTimeout(() => {
+      if (categoryItem === "Everything") {
+        setItems(originalItems);
+      } else {
+        const updatedItems = originalItems.filter((curElem) => {
+          return curElem.category === categoryItem;
+        });
+        setItems(updatedItems);
+      }
+      setIsLoading(false);
+    }, 500);
   };
+
+  if (isLoading) {
+    return (
+      <Loader />
+    );
+  }
 
   return (
     <section className="work container section" id="work">
