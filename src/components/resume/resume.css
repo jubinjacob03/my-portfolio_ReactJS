@@ -54,21 +54,21 @@
 
 @media screen and (max-width: 1024px) {
     .resume-container {
-      grid-template-columns: 450px;
-      justify-content: center;
-      row-gap: 1.875rem;
+        grid-template-columns: 450px;
+        justify-content: center;
+        row-gap: 1.875rem;
     }
 
     .timeline-item::before {
         left: 2px;
     }
-  }
+}
 
 @media screen and (max-width: 576px) {
     .resume-container {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  }
+}
 
 @media screen and (max-width: 350px) {
     .timeline-item {

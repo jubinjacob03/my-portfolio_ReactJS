@@ -4,32 +4,32 @@
 @tailwind utilities;
 
 :root {
-    /*=====Color=====*/
-    --first-color: #ea580c;
-    --title-color: #f59e0b;
-    --text-color: #fcd34d;
-    --body-color: #2a2a2a;
-    --container-color: #2c2c2c;
-    /*=====Font=====*/
-    --body-font: 'Rubik', sans-serif;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-    /*=====Font-Weight=====*/
-    --font-medium:500;
-    --font-semibold:600;
-    --font-bold:700;
-    /*=====Styles=====*/
-    --shadow: 0px 5px 20px 0px rgb(69 67 96  /10%);
-    --border-radius: 20px;
+  /*=====Color=====*/
+  --first-color: #ea580c;
+  --title-color: #f59e0b;
+  --text-color: #fcd34d;
+  --body-color: #2a2a2a;
+  --container-color: #2c2c2c;
+  /*=====Font=====*/
+  --body-font: 'Rubik', sans-serif;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  /*=====Font-Weight=====*/
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  /*=====Styles=====*/
+  --shadow: 0px 5px 20px 0px rgb(69 67 96 /10%);
+  --border-radius: 20px;
 }
 
-    /*=====Text-adaptive=====*/
+/*=====Text-adaptive=====*/
 @media screen and (max-width: 1024px) {
-  :root{
+  :root {
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -39,7 +39,7 @@
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -107,10 +107,9 @@ img {
 
 .section-title {
   font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
   font-weight: var(--font-bold);
   position: relative;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .section-title::before {
@@ -125,6 +124,7 @@ img {
 
 .btn {
   padding: 0.75rem 2rem;
+  position: relative;
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0, 0, 0 / 0%);
@@ -136,7 +136,7 @@ img {
 }
 
 @keyframes button-push {
-  50%{
+  50% {
     transform: scale(0.8);
   }
 

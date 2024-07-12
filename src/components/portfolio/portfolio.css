@@ -16,7 +16,7 @@
 
 .work-item:hover {
     color: var(--first-color);
-} 
+}
 
 .work-img {
     padding: 30% 30% 30% 30%;
@@ -133,29 +133,30 @@
     .work-filters {
         justify-content: center;
     }
+
     .work-container {
-      grid-template-columns: repeat(2,330px);
-      justify-content: center;
-      row-gap: 1.875rem;
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
     }
 
     .timeline-item::before {
         left: 2px;
     }
-  }
+}
 
 @media screen and (max-width: 576px) {
     .work-container {
-      grid-template-columns: 310px;
+        grid-template-columns: 310px;
     }
 
     .work-filters {
         row-gap: .25rem;
     }
-  }
+}
 
 @media screen and (max-width: 350px) {
     .work-container {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
