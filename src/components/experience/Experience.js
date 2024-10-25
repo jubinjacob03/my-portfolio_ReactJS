@@ -1,15 +1,15 @@
 import React from "react";
-import "./resume.css";
+import "./experience.css";
 import Data from "./Data";
 import Card from "./Card";
 import { CardWrapper } from "./CardWrapper";
 
-const Resume = () => {
+const Experience = () => {
   return (
-    <section className="resume container section" id="resume">
+    <section className="experience container section" id="experience">
       <h2 className="section-title">Experience</h2>
 
-      <div className="resume-container grid">
+      <div className="experience-container grid">
         <CardWrapper>
           <div className="timeline grid">
             {Data.map((val, id) => {
@@ -52,4 +52,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Experience;

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import "./contact.css";
 
@@ -9,20 +9,22 @@ const Contact = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    setShowAlert(true);
-    const formCurrent = form.current;
     await handleSubmit(e);
-    if (state.succeeded) {
-      formCurrent.reset();
-    }
   };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      form.current.reset();
+      setShowAlert(true);
+    }
+  }, [state.succeeded]);
 
   return (
     <section className="contact container section" id="contact">
       <h2 className="section-title">Get In Touch</h2>
       <div className="contact-container grid">
         <div className="contact-info">
-          <p className="contact-title">Let's talk about everything!</p>
+          <p className="contact-title">Not into emails ? Use this form !</p>
         </div>
         <form ref={form} onSubmit={handleFormSubmit} className="contact-form">
           <div className="contact-form-group">
@@ -32,6 +34,7 @@ const Contact = () => {
                 className="contact-form-input"
                 placeholder="Enter your name"
                 name="name"
+                required
               />
             </div>
             <div className="contact-form-div">
@@ -40,6 +43,7 @@ const Contact = () => {
                 className="contact-form-input"
                 placeholder="Enter your email"
                 name="email"
+                required
               />
               <ValidationError
                 prefix="Email"
@@ -54,6 +58,7 @@ const Contact = () => {
               className="contact-form-input"
               placeholder="Enter your Subject"
               name="subject"
+              required
             />
           </div>
           <div className="contact-form-div">
@@ -62,7 +67,8 @@ const Contact = () => {
               cols="30"
               rows="5"
               className="contact-form-input"
-              placeholder="What can I help you with ?"
+              placeholder="What can I help you with?"
+              required
             />
             <ValidationError
               prefix="Message"
@@ -70,19 +76,18 @@ const Contact = () => {
               errors={state.errors}
             />
           </div>
-
-          <span class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
-            <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-amber-500 opacity-[3%]"></span>
-            <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-amber-500 opacity-100 group-hover:-translate-x-8"></span>
-            <span class="relative w-full text-left text-amber-500 transition-colors duration-200 ease-in-out group-hover:text-gray-900">
-              <input
-                type="submit"
-                value="Send Message"
-                disabled={state.submitting}
-              />
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group"
+          >
+            <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-amber-500 opacity-[3%]"></span>
+            <span className="absolute top-0 left-0 w-[12.25rem] h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-amber-500 opacity-100 group-hover:-translate-x-8"></span>
+            <span className="relative w-full text-left text-amber-500 transition-colors duration-200 ease-in-out group-hover:text-gray-900 text-sm">
+              Send Message
             </span>
-            <span class="absolute inset-0 border-2 border-amber-500 rounded-full"></span>
-          </span>
+            <span className="absolute inset-0 border-2 border-amber-500 rounded-full"></span>
+          </button>
         </form>
         {showAlert && (
           <Alert

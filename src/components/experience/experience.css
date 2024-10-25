@@ -1,4 +1,4 @@
-.resume-container {
+.experience-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
 }
@@ -53,7 +53,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .resume-container {
+    .experience-container {
         grid-template-columns: 450px;
         justify-content: center;
         row-gap: 1.875rem;
@@ -65,7 +65,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .resume-container {
+    .experience-container {
         grid-template-columns: 1fr;
     }
 }

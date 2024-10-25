@@ -47,7 +47,7 @@
 }
 
 .cyber-iot {
-    width: 35%;
+    width: 45%;
     background-color: rgb(255, 209, 92);
 }
 
@@ -57,17 +57,17 @@
 }
 
 .full-stack {
-    width: 70%;
+    width: 75%;
     background-color: rgb(108, 108, 299);
 }
 
 .ai-ml-dl {
-    width: 50%;
+    width: 60%;
     background-color: rgb(108, 209, 99);
 }
 
-.mobile-andro-os {
-    width: 40%;
+.os {
+    width: 50%;
     background-color: rgb(242, 136, 50);
 }
 

@@ -22,9 +22,8 @@ import {
   IconCaretDownFilled,
 } from "@tabler/icons-react";
 import { cn } from "../../utils/cn";
-// Replace with the actual path to your logo image
 
-export const MacbookScroll = ({ src, showGradient, title, badge }) => {
+export const MacbookScroll = ({ src, showGradient, badge }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -110,7 +109,11 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <img src="./avatar_1.jpg" alt="profile-img" className="size-20 rounded-full" />
+          <img
+            src="./avatar_1.jpg"
+            alt="profile-img"
+            className="size-20 rounded-full"
+          />
         </div>
       </div>
       <motion.div
@@ -135,15 +138,16 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
             <div class="bg-gray-700 border-t-0 w-full">
               <div className="about-data grid">
                 <div className="about-info">
-                  <p className="text-sm leading-loose py-4 px-5">
-                    Hi, I'm Jubin Jacob, a B.Tech CSE CyberSecurity student at
-                    Sri Ramachandra Faculty of Engineering, Chennai. Exploring
-                    fields of Cyber Security, AI, ML, IoT, and Full-Stack .
-                    Let's collaborate!
-                    <br /> Ciao ✌️.
+                  <p className="text-sm leading-loose py-4 px-5 text-justify">
+                    Hi, I’m Jubin Jacob, a B.Tech CSE Cyber Security student at
+                    Sri Ramachandra Faculty of Engineering, Chennai. I’m
+                    passionate about Cyber Security, AI, ML, IoT, and Full-Stack
+                    Development. Feel free to check out my work, and let’s
+                    collaborate!
+                    <br /> Ciao ✌️
                   </p>
                   <a
-                    href="https://drive.google.com/file/d/1xn4-Jf_1ZLF6LTyvtQBAPI_vaycrP0sR/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1FLCWV8fU90ssQ_D2Ybn45DpT3BeXNoFZ/view?usp=drive_link"
                     target="_blank"
                     rel="noreferrer"
                     class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group mx-4"
@@ -160,7 +164,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
                   <div className="skills-data">
                     <div className="skills-titles">
                       <h3 className="skills-name">Cyber / IOT</h3>
-                      <span className="skills-number ">35%</span>
+                      <span className="skills-number ">45%</span>
                     </div>
                     <div className="skills-bar">
                       <span className="skills-percentage cyber-iot"></span>
@@ -180,7 +184,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
                   <div className="skills-data">
                     <div className="skills-titles">
                       <h3 className="skills-name">Full Stack</h3>
-                      <span className="skills-number">70%</span>
+                      <span className="skills-number">75%</span>
                     </div>
                     <div className="skills-bar">
                       <span className="skills-percentage full-stack"></span>
@@ -190,7 +194,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
                   <div className="skills-data">
                     <div className="skills-titles">
                       <h3 className="skills-name">AI /ML /DL</h3>
-                      <span className="skills-number">50%</span>
+                      <span className="skills-number">60%</span>
                     </div>
                     <div className="skills-bar">
                       <span className="skills-percentage ai-ml-dl"></span>
@@ -200,10 +204,10 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
                   <div className="skills-data">
                     <div className="skills-titles">
                       <h3 className="skills-name">OS Literacy</h3>
-                      <span className="skills-number">40%</span>
+                      <span className="skills-number">50%</span>
                     </div>
                     <div className="skills-bar">
-                      <span className="skills-percentage mobile-andro-os"></span>
+                      <span className="skills-percentage os"></span>
                     </div>
                   </div>
                 </div>
