@@ -5,7 +5,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/works/Portfolio";
-import ParticleComponent from "./components/portfolio/particles/Particles";
+import ParticleComponent from "./components/works/particles/Particles";
 import GlowingDots from "./components/contact/GlowingDots";
 
 function App() {
